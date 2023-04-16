@@ -1,0 +1,6 @@
+Remove any files inside the "Ingredients" folder for packs you do not own/have installed.
+Having ingredients for packs you do not own can cause errors with your game.
+
+All files marked with an * have multiple pack options.
+
+Most files are base game compatible.
