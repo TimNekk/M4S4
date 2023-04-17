@@ -1,0 +1,1459 @@
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>
+BetterExceptions Conflict Report</title>
+</head>
+<body style="color: black;background: white;">
+<center>
+
+  <style>
+
+a {
+    color:#fff;
+    font-weight:bold;
+  }
+
+  .header {
+    width:90%;
+    background-color:#df5800;
+    padding: 10px;
+    border-radius:5px;
+	font-family: Arial;
+  }
+
+body {
+    font-family: Arial;
+  }
+  
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  top: 110%;
+  left: 50%;
+  font-size: 11px;
+  margin-left: -253px;
+  z-index: 1;
+  position: absolute;
+  line-break: normal;
+}
+
+.tooltip:hover .tooltiptext {
+  display:block;
+  visibility:visible;
+}
+
+td, th {
+  border: 2px #7c7c7c solid;
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+td {
+    font-size: 15px;
+    vertical-align: top;
+}
+
+td span {
+    margin: 4px 2px;
+}
+
+th {
+    font-size: 18px;
+    border-top-width: 0;
+	background-color:#ffb652;
+	width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table {
+  width:100%;
+  border-collapse: collapse;
+  border-top: 2px #7c7c7c solid;
+}
+
+.addon {
+  background-color:#096a00;
+  font-size: 12;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline;
+  vertical-align: top;
+  float:right;
+  position:relative;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.preview .tooltiptext {
+  width: 132px !important;
+  margin-left: -117px !important;
+  
+}
+
+.preview {
+  display: inline;
+  position:relative;
+  cursor: pointer;
+}
+
+.content {
+  text-align: left;
+  width:90%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display:none;
+  overflow:visible;
+}
+
+.contentpad {
+  padding: 10px;
+}
+
+.contentpaderror {
+  padding: 10px;
+  border: 1px #d2d2d2 solid;
+}
+
+.button {
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  min-width:120px;
+}
+
+.secButton {
+	background-color: #b90000;
+	float: right;
+}
+
+.button:hover {
+    background-color: #ff9b20;
+}
+
+.secButton:hover {
+	background-color: #990000
+}
+
+.sectionHeader {
+    background-color: #ff9400;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+</style>
+
+<script type="text/javascript">
+window.addEventListener('load', function () {
+
+var coll = document.getElementsByClassName("collapsible");
+var col2 = document.getElementsByClassName("sub-collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+      content.style.display = "none";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.display = "block";
+    }
+  });
+}
+
+for (i = 0; i < col2.length; i++) {
+  col2[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+		content.style.maxHeight = null;
+		content.style.display = "none";
+    } else {
+      content.style.display = "block";
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+coll = document.getElementsByClassName("expanded");
+
+for (i = 0; i < coll.length; i++) {
+    var content = coll[i].nextElementSibling;
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+
+}, false);
+</script>
+
+  
+<div class='header'><span style='color:#FFF;font-size:50px'>Better Exceptions Conflict Report</span><br><span style="color:#FFF;font-size:20px">v3.11 | Created by <a href='https://TwistedMexi.com' target="_blank">TwistedMexi</a></span>
+<br><br>
+<span style='color:#FFF;font-size:15px;font-weight: bold;'>The following files conflict with each other.<br>As always, if a file is part of a multi-file mod, make sure you remove all of the mod files.</span></div>
+<div style="display: table;justify-content: center;min-width:90%">
+
+<div class='excontainer'>
+  <div class='sectionHeader'>Mod Conflicts</div>
+    <div class="contentpaderror">
+<table style="line-break:anywhere;">
+<thead>
+<tr>
+<th>File A</th>
+<th>File B</th>     
+<th style="min-width: 60px;">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Mods\BasementalDrugs\Basemental Drugs.package</td><td>Mods\BasementalDrugs\-Basemental Drugs - Russian Translation by esqdumper.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1239391C5302C5C1</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\BasementalDrugs\Optional Packages\Basemental Beer Brewing Station (Optional).package</td><td>Mods\BasementalDrugs\-Basemental Beer Brewing Station (Optional) - Russian Translation by esqdumper.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:120000004E72BC04</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\BasementalDrugs\Optional Packages\Basemental Hookah (Optional).package</td><td>Mods\BasementalDrugs\-Basemental Hookah (Optional) - Russian Translation by esqdumper.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:120000000B5A6803</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1200000077B38C4F</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\BasementalDrugs\Optional Packages\Basemental Real Drink Names (Optional).package</td><td>Mods\BasementalDrugs\-Basemental Real Drink Names (Optional) - Russian Translation by esqdumper.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12A89BEF8F703FF9</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\BasementalDrugs\Optional Packages\Basemental Trippy Batuu (Optional).package</td><td>Mods\BasementalDrugs\-Basemental Trippy Batuu (Optional) - Russian Translation by esqdumper.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12AC8617A6549B3D</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\Careers mega pack\Midnitetech_Careers_HumanResourcesSpecialist.package</td><td>Mods\Careers mega pack\Midnitetech_Careers_Hotel.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:127687749970E9A9</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\Cookbooks\SCCO_Cookbook_GP03-Experimental.package</td><td>Mods\CookingOverhaul\Cookbooks\SCCO_Cookbook_EP04-Seafood.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:005FDD0C:E5D066B3FBD6DF63</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\EA Recipes\SCCO_EARecipes-EP08.package</td><td>Mods\CookingOverhaul\!SrslySims_CookingOverhaul_RU_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000F62AB968</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000009BDD5217</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\EA Recipes\SCCO_EARecipes-EP12.package</td><td>Mods\CookingOverhaul\!SrslySims_CookingOverhaul_RU_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:120000003D90B097</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1200000019B0A1E3</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000E7254B65</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1200000091078BE2</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\EA Recipes\SCCO_EARecipes-GP11.package</td><td>Mods\CookingOverhaul\EA Recipes\SCCO_EARecipes-BG.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:0097F8C8:0000000000003D40</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\EA Recipes\SCCO_EARecipes-GP11.package</td><td>Mods\CookingOverhaul\EA Recipes\SCCO_EARecipes-EP05.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:0097F8C8:000000000002D804</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\Ingredients\Coffee\SCC0_Ingredient-CoffeeRegular.package</td><td>Mods\CookingOverhaul\!SrslySims_CookingOverhaul_RU_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000A80D3513</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\Ingredients\Preserves []\EP11\SCCO_CraftedIngredient_Butter.package</td><td>Mods\CookingOverhaul\Ingredients\Dairy\SCC0_Ingredient-Butter.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>319E4F1D:00000000:00000000035BBBCE</span></td><td><span>ObjectCatalog Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\Ingredients\Preserves []\EP11\SCCO_CraftedIngredient_CaramelSauce.package</td><td>Mods\CookingOverhaul\EA Recipes\SCCO_EARecipes-EP11.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:0097F8C8:000000000003E9CB</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\Ingredients\Preserves []\EP11\SCCO_CraftedIngredient_Cream.package</td><td>Mods\CookingOverhaul\Ingredients\Dairy\SCC0_Ingredient-Cream.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>319E4F1D:00000000:0000000001E24B1C</span></td><td><span>ObjectCatalog Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\CookingOverhaul\Ingredients\Preserves []\EP11\SCCO_CraftedIngredient_CreamCheese.package</td><td>Mods\CookingOverhaul\Ingredients\Dairy\SCC0_Ingredient-CreamCheese.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>319E4F1D:00000000:00000000002677EC</span></td><td><span>ObjectCatalog Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Baby Diaper.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000064659FCA</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Bike Prop.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000361BAFC4</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\cigarette.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000025E405EE</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Flame Thrower.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000035BF8666</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Floor Wanted paper.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000138FCE8F</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Gun Mesh.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000036C01D27</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Knife Prop.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000007F6A9D8</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Knife.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000063278EBE</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Life Tragedies - Handgun Prop.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000050D46D90</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Life Tragedies Wild Willard Kline Fire.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000013CF8E51</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Matthew Briggs Wanted Paper.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000FE162DE1</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Matthew Briggs Wanted Poster.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000C612DDAE</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Parachute.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000E3549AE1</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Patrick Rogers Wanted paper.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000CDDB7521</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Patrick Rogers Wanted Poster.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000EBB12472</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Poisoned Apple.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000047D31DF2</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Props - Robber's Sack.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000C7CAFBB3</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Sapphire Wanted Poster.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000003047D64</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Willard Kline Wanted Paper.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000093B68E0D</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Willard Kline Wanted Poster.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000092F8EA23</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Zanny Antowan Wanted Paper.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000003168754</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Files\Zanny Antowan Wanted Poster.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000BB8A314B</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Props\Bottle.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:120000006609D744</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Props\Jason's Knife Prop.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1200000093A52AEE</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Props\Machete Prop.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:120000004889EA7B</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\Props\Needle Prop.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:120000007D2A692B</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\LifeTragedies\SAC_Life Tragedies -MOD- v 1.2.8.1.package</td><td>Mods\LifeTragedies\!SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12000000444B3C50</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\MemoryPanelMod\Lumpinou_MemoryPanelMod_v2.package</td><td>Mods\MemoryPanelMod\!Lumpinou_MemoryPanelMod_RU_Jane_Moriarty.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:126F1FAFD5112EC3</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SimNationalBank\SimRealist_-_SimNationalBank_Bills_0.6.1.6.package</td><td>Mods\SimNationalBank\!SimNationalBankBills_0.6.1.2_RU.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:128BBA70C09766C9</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Alcohol\[KawaiiStacie] My Alcohol Base.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12B5A8CB6F59AEED</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Alcohol\[KawaiiStacie] My Alcohol.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12774FA5E4B71201</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Appearance\[KawaiiStacie] My Appearance Changes Mod.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:128B115AA461AFAC</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Beauty\KS - [My Beauty] Makeup Kit.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:120000005D92AFBE</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Beauty\KS - [My Beauty] Makeup Looks.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:129D68DBBA517931</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Beauty\KS - Slice of Life [My Beauty].package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:122BC612A83F6300</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Cycle\[KawaiiStacie] Menstrual Odor Broadcastor.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:127B07321A5D2B17</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Cycle\[KawaiiStacie] Menstrual Toliet Interaction.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12A69CFD634F399A</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Cycle\[KawaiiStacie] My Cycle.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12D021EFD00BE621</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Health\[KawaiiStacie] Doctor Interactions.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12D0DCA9CF7A07DE</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Health\[KawaiiStacie] My Health.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:124C927BFBA01834</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Health\[KawaiiStacie] Sickness Spreader.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:127568CC4F7F8C18</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Memories\[KawaiiStacie] Conversations &amp; Thoughts.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:129A491EC7528DD5</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Memories\[KawaiiStacie] My Memories Base.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:127EBAFFE0FFF72C</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Memories\[KawaiiStacie] My Memories.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:1254E293C4C8ED38</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] Another Inviter.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1281B3FBFB210789</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] More Parties System.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:127F6D9FEC889A71</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] My Party Life.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] Party System.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12BB9A6F470B16E4</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] Roles &amp; Buffs.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:120CB7DE17FA3E3B</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] Throw Parties.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] Throw Parties.package</td><td>Mods\SliceOfLife\[KawaiiStacie] My Party Life\[KawaiiStacie] My Party Life.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>E882D22F:00000000:E02474EF634A4FC8</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 29</span></span></td></tr><tr><td><span>FBC3AEEB:00000000:F74E7EBB4EC4552B</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>6E0DDA9F:00000000:A1D99D9A33581273</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 6</span></span></td></tr><tr><td><span>E882D22F:00000000:924EF36C3605FA5E</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>E882D22F:00000000:C9FA34004C0C3036</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 29</span></span></td></tr><tr><td><span>FBC3AEEB:00000000:8F0830C3BF454C95</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 8</span></span></td></tr><tr><td><span>9C07855F:00000000:F91960C6BACB2457</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 20</span></span></td></tr><tr><td><span>E882D22F:00000000:E17902294061B550</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 36</span></span></td></tr><tr><td><span>FBC3AEEB:00000000:9FB0684B8A43CDC1</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 8</span></span></td></tr><tr><td><span>E882D22F:00000000:829BE3710A1A5D73</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 36</span></span></td></tr><tr><td><span>E882D22F:00000000:916331E068233FB7</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 29</span></span></td></tr><tr><td><span>9C07855F:00000000:EEB12157C7FBA18C</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 13</span></span></td></tr><tr><td><span>6E0DDA9F:00000000:D1454C99A26056B9</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 6</span></span></td></tr><tr><td><span>E882D22F:00000000:BEB06DE2160B0E08</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 29</span></span></td></tr><tr><td><span>9C07855F:00000000:94FE4F8AEEDB7637</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 10</span></span></td></tr><tr><td><span>6E0DDA9F:00000000:E90B573EB9556899</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 6</span></span></td></tr><tr><td><span>E882D22F:00000000:EF862DC9457667CC</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 29</span></span></td></tr><tr><td><span>E882D22F:00000000:AEE47BAD86CF8321</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 29</span></span></td></tr><tr><td><span>9C07855F:00000000:C1F3859AFEBFB498</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>E882D22F:00000000:FEB10E9F7A863FB5</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>E882D22F:00000000:D4563B5DE907FE35</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>220557DA:00000000:00DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:02DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:03DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:04DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:05DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:06DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:07DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:08DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:0BDCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:0CDCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:0DDCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:0EDCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:0FDCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:10DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:11DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:13DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:15DCAAD382B04A99</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Personality\[KawaiiStacie] - My Personality.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:129658A658BB7C92</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Slice of Life [Action Menu].package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12E65D99EB70727F</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Social Life\[KawaiiStacie] My Social Life Phone Calls.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1278CB204969CF21</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Social Life\[KawaiiStacie] My Social Life Popup Text Invites.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:122385AE7D47ED38</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Social Life\[KawaiiStacie] My Social Life Popup Texts.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12CA543C8F3C9882</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Social Life\[KawaiiStacie] My Social Life Popup Visitors.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:12A5E862C17CBF54</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] My Social Life\[KawaiiStacie] My Social Life.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12E2DB54CA679757</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] Self Woohoo\[KawaiiStacie] Self Woohoo Buffs.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:12AB2A78A665DD49</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\SliceOfLife\[KawaiiStacie] Self Woohoo\[KawaiiStacie] Self Woohoo Mod.package</td><td>Mods\SliceOfLife\!KawaiiStacie_Slice_of_Life_Mod_RUS_Origamika.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:1283A145018D6AEB</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\WickedWhimsMod\TURBODRIVER_WickedWhims_Tuning.package</td><td>Mods\WickedWhimsMod\TURBODRIVER_CAS_DefaultUnderwear.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>034AEECB:00000000:000000000000198C</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\WickedWhimsMod\TURBODRIVER_WickedWhims_Tuning.package</td><td>Mods\WickedWhimsMod\(optional)Add Buffs to Default WW [YG].package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>034AEECB:80000000:848F511EE2A24FAE</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:8827C8E83FA632CD</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:9B51E0C1EFB195A7</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:9CA6D0AC5CAD47A4</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:A43288C8BAA0A3EE</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:AE8F40BA2ABAA055</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:B44809675E0AA33F</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:B5B268EDF0593B91</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:C1EFD2B054127A38</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:C21B5AE4584B2EE3</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:C4460997D2BFE88F</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:C69D2AF242305406</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:CA6FC4E0DF0D26C1</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:CD353FD47A58C625</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:CEFEFAD0AD08E429</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:D6653A976158586C</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:D9540FDB8A8300E3</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:D9A5AA86DB622326</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:D9FEFA96D6108873</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:DEA3109CE1DEEA25</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:F0BEE70EE205FE86</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:F1D96504B5B00980</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:F6A15C5BEABD97D1</span></td><td><span>Base Resource</span></td></tr><tr><td><span>034AEECB:80000000:F811FB647ECD1F5F</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\WickedWhimsMod\TURBODRIVER_WickedWhims_Tuning.package</td><td>Mods\Misc\sims4pack_998-Mod-Antitsenzor-No-Mosaic--Censor-Mod-for-The-Sims-4.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00D6FA33:DEAD4915C9C6C0D8</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\WickedWhimsMod\TURBODRIVER_WickedWhims_Tuning.package</td><td>Mods\WickedWhimsMod\Cumshine.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>6017E896:00000000:80FA7065BF6EE4BD</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>6017E896:00000000:96CB013DAF938038</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>6017E896:00000000:A98F0E3D88E105F1</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>6017E896:00000000:B3A8B6324AD3C078</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>E882D22F:00000000:89C1CC96787A4ECB</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>E882D22F:00000000:F56438117743E37C</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 129</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods\WickedWhimsMod\WalkingBounce.package</td><td>Mods\WickedWhimsMod\BS_Boobies.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>6B20C4F3:00000000:097D2C316CEA34DB</span></td><td><span>Base Resource</span></td></tr><tr><td><span>6B20C4F3:00000000:03C2B08D51B70E94</span></td><td><span>Base Resource</span></td></tr><tr><td><span>6B20C4F3:00000000:E8BA2A9A3192F41D</span></td><td><span>Base Resource</span></td></tr><tr><td><span>6B20C4F3:00000000:1811576DE71A4C72</span></td><td><span>Base Resource</span></td></tr><tr><td><span>6B20C4F3:00000000:D4BCFF75900EF282</span></td><td><span>Base Resource</span></td></tr><tr><td><span>6B20C4F3:00000000:14120FA78E20EE2F</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    
+</tbody>
+</table>
+    </div>
+</div>
+<br>
+<span style="color:#000;font-size:20px">Found 81 conflicting mods out of 1547 total files in 10.83 seconds.</span>
+</div>
+</center>
+</body>
+</html>

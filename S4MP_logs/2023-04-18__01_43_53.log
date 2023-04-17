@@ -1,0 +1,9 @@
+[Tue Apr 18 01:43:53 2023]:  [default]: Config: is_server=True, player_id=0, player_name=Mistyfin Swoop server_id=0, room_code=local/host/26.222.10.4, 192.168.1.240
+[Tue Apr 18 01:46:55 2023]:  [NetworkCommands]: Default sim is set to 13247740910698510/Эд for 4 players
+[Tue Apr 18 01:46:55 2023]:  [NetworkCommands]: Connecting to game...
+[Tue Apr 18 01:46:57 2023]:  [NetworkClient]: An error occurred while starting: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+[Tue Apr 18 01:46:57 2023]:  [NetworkClient]: Traceback (most recent call last):
+  File "obfuscated\src\sims4multiplayer\network\network_client.py", line 25, in start
+  File "obfuscated\src\sims4multiplayer\network\network_protocol_base.py", line 21, in __init__
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
