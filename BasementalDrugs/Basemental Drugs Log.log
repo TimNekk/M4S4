@@ -16,7 +16,7 @@ Installation Detection Test: Correct installation
 OS version:      Windows 11 10.0.22621
 CPU:             AMD Ryzen 7 2700 Eight-Core Processor          
 RAM:             32694MB
-Free memory:     22470MB
+Free memory:     22355MB
 GPU:             NVIDIA GeForce RTX 3060 Ti
 The Sims 4 version 1.91.186.1030
 
@@ -27,7 +27,78 @@ Apparently not an egg fetishist...
 == Missing Game Packs ==
 No packs missing.
 == Packages ==
-Total amount: 1434
+Total amount: 1547
+!chingyu_addon_LumpinouMoods.package
+chingyu_Picker_for_P2.package
+chingyu_Trait_Amusing.package
+chingyu_Trait_Asocial.package
+chingyu_Trait_Barfly.package
+chingyu_Trait_Boring.package
+chingyu_Trait_Captivating.package
+chingyu_Trait_Charming.package
+chingyu_Trait_Comforting.package
+chingyu_Trait_Creepy.package
+chingyu_Trait_Darling.package
+chingyu_Trait_Delightful.package
+chingyu_Trait_Dislikes Children.package
+chingyu_Trait_Dislikes Elders.package
+chingyu_Trait_Downer.package
+chingyu_Trait_Encouraging.package
+chingyu_Trait_Envious.package
+chingyu_Trait_Extrovert.package
+chingyu_Trait_Fickle.package
+chingyu_Trait_Friendly.package
+chingyu_Trait_Gym Bunny.package
+chingyu_Trait_Hates Teens.package
+chingyu_Trait_Homebody.package
+chingyu_Trait_Hostile.package
+chingyu_Trait_Introvert.package
+chingyu_Trait_Mischievous.package
+chingyu_Trait_Motivating.package
+chingyu_Trait_Nerdy.package
+chingyu_Trait_Nurturing.package
+chingyu_Trait_Self-Conscious.package
+chingyu_Trait_Shy.package
+chingyu_Trait_Slow-To-Warm-Up.package
+chingyu_Trait_Sociable.package
+chingyu_Picker_for_P3.package
+chingyu_Trait_Aromantic.package
+chingyu_Trait_Avoidant.package
+chingyu_Trait_Awkward.package
+chingyu_Trait_BabyMaker.package
+chingyu_Trait_Bashful.package
+chingyu_Trait_Cruel.package
+chingyu_Trait_Egotistical.package
+chingyu_Trait_Heartbreaker.package
+chingyu_Trait_Homewrecker.package
+chingyu_Trait_Lovey-Dovey.package
+chingyu_Trait_Obsessive.package
+chingyu_Trait_Passionate.package
+chingyu_Trait_Repressed.package
+chingyu_Trait_Reserved.package
+chingyu_Trait_Silly.package
+chingyu_Trait_Soft.package
+chingyu_Trait_Teasing.package
+chingyu_Trait_TrustIssues.package
+chingyu_Picker_for_P5.package
+chingyu_Trait_Analytical.package
+chingyu_Trait_Artistic.package
+chingyu_Trait_Bad-Natured.package
+chingyu_Trait_Brilliant.package
+chingyu_Trait_ChildoftheNature.package
+chingyu_Trait_Clever.package
+chingyu_Trait_Feeble.package
+chingyu_Trait_Kind.package
+chingyu_Trait_Linguist.package
+chingyu_Trait_PerfectPitch.package
+chingyu_Trait_Slow-Witted.package
+chingyu_Trait_Smart.package
+chingyu_Trait_Sporty.package
+chingyu_Trait_Talentless.package
+chingyu_casVer_AttractivenessTraits_V2.5.package
+chingyu_casVer_BasicTraits_V2.5.package
+chingyu_RewardVer_AttractivenessTraits_V2.5.package
+chingyu_RewardVer_BasicTraits_V2.5.package
 -Basemental Beer Brewing Station (Optional) - Russian Translation by esqdumper.package
 -Basemental Drugs - Russian Translation by esqdumper.package
 -Basemental Hookah (Optional) - Russian Translation by esqdumper.package
@@ -124,7 +195,6 @@ Victoria Secret Career [BeautifulLache].package
 - Gameplay Overhaul - Russian translation by trail_of_blood.package
 Carl_Gameplay_Overhaul.package
 sims4pack_9973-Fon-dlya-CAS-Aloha.package
-Cnazi.package
 mc_cmd_center.package
 mc_woohoo.package
 !SrslySims_CookingOverhaul_RU_Origamika.package
@@ -308,6 +378,48 @@ SCC0_Ingredient-TeaOolong.package
 SCC0_Ingredient-TeaOrangeBlossom.package
 SCC0_Ingredient-TeaYerbaMate.package
 SrslySims_CookingOverhaul-MainMod.package
+!SACRIFICIAL_Life's Drama_v2.0.3_RUS_RiMi.package
+SAC_Life's Drama -MOD- V 2.0.6.package
+NC4T_ky-e_LifetimeAspirations_BG_BaseGame.package
+NC4T_ky-e_LifetimeAspirations_EP02_GetTogether.package
+NC4T_ky-e_LifetimeAspirations_EP03_CityLiving.package
+NC4T_ky-e_LifetimeAspirations_EP04_Cats&Dogs.package
+NC4T_ky-e_LifetimeAspirations_EP06_GetFamous.package
+NC4T_ky-e_LifetimeAspirations_EP07_IslandLiving.package
+NC4T_ky-e_LifetimeAspirations_EP08_DiscoverUniversity.package
+NC4T_ky-e_LifetimeAspirations_EP09_EcoLifestyle.package
+NC4T_ky-e_LifetimeAspirations_EP10_SnowyEscape.package
+NC4T_ky-e_LifetimeAspirations_EP11_CottageLiving.package
+NC4T_ky-e_LifetimeAspirations_EP12_HighSchoolYears.package
+NC4T_ky-e_LifetimeAspirations_GP01_OutdoorRetreat.package
+NC4T_ky-e_LifetimeAspirations_GP02_SpaDay.package
+NC4T_ky-e_LifetimeAspirations_GP04_Vampires.package
+NC4T_ky-e_LifetimeAspirations_GP05_Parenthood.package
+NC4T_ky-e_LifetimeAspirations_GP06_JungleAdventure.package
+NC4T_ky-e_LifetimeAspirations_GP07_StrangerVille.package
+NC4T_ky-e_LifetimeAspirations_GP08_RealmofMagic.package
+NC4T_ky-e_LifetimeAspirations_GP09_JourneytoBatuu.package
+NC4T_ky-e_LifetimeAspirations_GP12_Werewolves.package
+NC4T_ky-e_LifetimeAspirations_SP17_NiftyKnitting.package
+NC4T_ky-e_LifetimeAspirations_SP22_BusttheDust.package
+NC4T_ky-e_NewAspirations_BG_BaseGame.package
+NC4T_ky-e_NewAspirations_EP01_GettoWork.package
+NC4T_ky-e_NewAspirations_EP02_GetTogether.package
+NC4T_ky-e_NewAspirations_EP03_CityLiving.package
+NC4T_ky-e_NewAspirations_EP04_Cats&Dogs.package
+NC4T_ky-e_NewAspirations_EP05_Seasons.package
+NC4T_ky-e_NewAspirations_EP06_GetFamous.package
+NC4T_ky-e_NewAspirations_EP07_IslandLiving.package
+NC4T_ky-e_NewAspirations_EP08_DiscoverUniversity.package
+NC4T_ky-e_NewAspirations_EP10_SnowyEscape.package
+NC4T_ky-e_NewAspirations_EP11_CottageLiving.package
+NC4T_ky-e_NewAspirations_GP01_OutdoorRetreat.package
+NC4T_ky-e_NewAspirations_GP03_DineOut.package
+NC4T_ky-e_NewAspirations_GP04_Vampires.package
+NC4T_ky-e_NewAspirations_GP07_StrangerVille.package
+NC4T_ky-e_NewAspirations_GP10_DreamHomeDecorator.package
+NC4T_ky-e_NewAspirations_SP07_KidsRoom.package
+NC4T_ky-e_NewAspirations_SP18_Paranormal.package
 !SAC_Life_Tragedies_RU_Origamika_Jane_Moriarty.package
 Jason Vorhees Skin.package
 Jason Vorhees Top.package
@@ -362,8 +474,6 @@ Machete Prop.package
 Needle Prop.package
 SAC_Life Tragedies -MOD- v 1.2 Animations.package
 SAC_Life Tragedies -MOD- v 1.2.8.1.package
-Madlen Perla Outfit.package
-Madlen Perla Stockings.package
 !Lumpinou_MemoryPanelMod_RU_Jane_Moriarty.package
 Lumpinou_MemoryPanelMod_v2.package
 Lumpinou_MemoryPanelMod_v2_Optional_RetroactiveMemoryAssign.package
@@ -1091,6 +1201,9 @@ WINGS HAIR TS4 ON0712 M.package
 [turksimmer] YSL Leather minidress - Patreon.package
 [turksimmer] YSL Metallic minidress - Patreon.package
 [WEILE]M_Roll-UpPants.package
+Cnazi.package
+Madlen Perla Outfit.package
+Madlen Perla Stockings.package
 PersonalityPlease!_CatsDogs_ByPolarbearsims.package
 PersonalityPlease_MeanInteractions_ByPolarbearsims.package
 Personality_Please!_By_Polarbearsims.package
@@ -1464,7 +1577,7 @@ WINGS HAIR TS4 OE0528 F.package
 [qLayla] Eyeliner N88.package
 
 == Scripts ==
-Total amount: 112
+Total amount: 113
 basementaldrugs.ts4script
 Asiashamecca_Careers_UltimateDancer.ts4script
 Asiashamecca_Careers_UltimateFbiAgent.ts4script
@@ -1555,6 +1668,7 @@ mc_pregnancy.ts4script
 mc_tuner.ts4script
 mc_woohoo.ts4script
 SrslySims_CookingOverhaul-SCRIPT.ts4script
+Life's Drama -MOD-.ts4script
 SAC_Life Tragedies -MOD- v 1.2.8.1 Script.ts4script
 Lumpinou_MemoryPanelMod_v2.ts4script
 Don't Wash Dishes (LeRoiDeTout Update).ts4script
@@ -1580,5 +1694,5 @@ TURBODRIVER_WickedWhims_Scripts.ts4script
 
 
 
-Tue Apr 18 02:18:59 2023
-LogHexValue 259F4AE0EA9B0FEA
+Tue Apr 18 13:27:21 2023
+LogHexValue DE360CFA6CB6990E
